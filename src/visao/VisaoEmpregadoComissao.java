@@ -39,7 +39,7 @@ public class VisaoEmpregadoComissao  implements IVisaoEmpregado {
 
 
 @Override
-public void mostraDados() {
+public void mostrarDados() {
     JOptionPane.showMessageDialog(null, this.obterDados(), "Resultados", JOptionPane.PLAIN_MESSAGE);
 }
 

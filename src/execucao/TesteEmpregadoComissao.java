@@ -10,7 +10,7 @@ public class TesteEmpregadoComissao {
         
         VisaoEmpregadoComissao emp2 = new VisaoEmpregadoComissao();
         emp2.lerDados();
-        emp2.mostraDados();
+        emp2.mostrarDados();
         
         System.exit(0);
     }

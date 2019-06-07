@@ -23,7 +23,7 @@ public class EmpregadoComissao extends Empregado {
      }
      
      public final void setTotalVenda(float totalVenda) throws PessoaException {
-         if (totalVenda > 0) {
+         if (totalVenda >= 0) {
              this.totalVenda = totalVenda;
          } else {
              throw new PessoaException("Total de vendas invalido");
@@ -35,7 +35,7 @@ public class EmpregadoComissao extends Empregado {
      }
      
      public final void setPComissao(float percComissao) throws PessoaException {
-         if (percComissao >= 0 && percComissao <= 100) {
+         if (percComissao > 0 && percComissao <= 100) {
              this.pComissao = percComissao;
          } else {
              throw new PessoaException("Percentual de comissao invalido");

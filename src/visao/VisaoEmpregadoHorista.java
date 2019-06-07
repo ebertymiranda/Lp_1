@@ -24,7 +24,7 @@ public class VisaoEmpregadoHorista implements IVisaoEmpregado {
             try {
                 emp.setNome(JOptionPane.showInputDialog("Forneca o nome: "));
                 emp.setCargo(JOptionPane.showInputDialog("Forneca o cargo: "));
-                emp.setNumeroHora(Float.parseFloat(JOptionPane.showInputDialog("Forneca o numero de horas trabalhadas: ")));
+                emp.setNumeroHora(Integer.parseInt(JOptionPane.showInputDialog("Forneca o numero de horas trabalhadas: ")));
                 emp.setValorHora(Float.parseFloat(JOptionPane.showInputDialog("Forneca o valor da hora trabalhada: ")));
                 continuaLoop = false;
             } catch (PessoaException e) {
@@ -36,7 +36,7 @@ public class VisaoEmpregadoHorista implements IVisaoEmpregado {
     }
     
     @Override
-    public void mostraDados() {
+    public void mostrarDados() {
         JOptionPane.showMessageDialog(null, this.obterDados(), "Resultados", JOptionPane.PLAIN_MESSAGE);
     }
     

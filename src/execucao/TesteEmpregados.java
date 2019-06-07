@@ -61,10 +61,10 @@ public class TesteEmpregados {
            int resp = 0;
            do {
                try {
-                   resp = Integer.parseInt(JOption.showInputDialog(null, stringMenu));
+                   resp = Integer.parseInt(JOptionPane.showInputDialog(null, stringMenu));
                } catch (NumberFormatException ex) {
-                   JOptionPane.showDialog(null, "Digitacao inconsistente");
-                   resp - 0;
+                   JOptionPane.showMessageDialog(null, "Digitacao inconsistente");
+                   resp = 0;
                }
            } while (resp <1 || resp > 6);
            return resp;

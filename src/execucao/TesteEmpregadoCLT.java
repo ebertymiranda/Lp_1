@@ -12,7 +12,7 @@ public class TesteEmpregadoCLT {
         
         VisaoEmpregadoCLT emp1 = new VisaoEmpregadoCLT();
         emp1.lerDados();
-        emp1.mostraDados();
+        emp1.mostrarDados();
         
         
         System.exit(0);
